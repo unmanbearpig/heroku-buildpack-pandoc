@@ -5,7 +5,7 @@
 testCompile() {
   compile
   assertEquals 0 ${rtrn}
-  assertContains "Downloading pandoc 1.17.2" "$(cat ${STD_OUT})"
+  assertContains "Downloading pandoc 2.7.3" "$(cat ${STD_OUT})"
   assertContains "Extracting pandoc" "$(cat ${STD_OUT})"
   assertContains "Writing profile script" "$(cat ${STD_OUT})"
 
