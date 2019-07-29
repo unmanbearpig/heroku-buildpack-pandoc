@@ -11,8 +11,12 @@ function topic() {
   echo "-----> $*"
 }
 
-PANDOC_VERSION="2.7.3"
-GITHUB_FILE="pandoc-2.7.3-1-amd64.deb"
+# Use 2.5 because it's the latest release in Stackage LTS (13.29)
+# that we use to build videofilter plugin
+# https://www.stackage.org/lts-13.29/package/pandoc
+# and also the latest release in the latest Ubuntu (19.04) at this time
+PANDOC_VERSION="2.5"
+GITHUB_FILE="pandoc-2.5-1-amd64.deb"
 BUILD_DIR=$1
 CACHE_DIR=$2
 
